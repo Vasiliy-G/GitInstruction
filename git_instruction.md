@@ -1,5 +1,5 @@
 #  Краткая инструкция по работе с git  
-![git_logo](git_logo.png)  
+![git_logo](images/git_logo.png)  
 ***
 *[Узнать подробнее про систему git на Wikipedia ](https://ru.wikipedia.org/wiki/Git)*
 ***
@@ -47,7 +47,14 @@
 (reflog - сокращение от reference logs)**
 >*git reflog*
 
+**Переключение (переход) между версиями**
+>*git checkout первые четыре символа имени commit  
+(можно имя полностью)*
 
+![git_checkout](images/git_checkout.png)
+
+**Вернутся к самой последней версии изменений**
+>*git checkout master*
 
 
 
