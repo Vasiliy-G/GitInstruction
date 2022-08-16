@@ -9,6 +9,9 @@
 *git config --global user.email "email"*
 
 
+**Вывести справку:**
+
+>*git help*
 
 
 
