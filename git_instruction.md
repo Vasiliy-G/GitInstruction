@@ -117,4 +117,6 @@
 *При выкачивани происходит слияние (merge) и возможны конфликты.
 
 
+create conflict branch3
+
 create conflict branch2
