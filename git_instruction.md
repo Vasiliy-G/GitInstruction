@@ -99,19 +99,19 @@
 Порядок действий:
 
 * создать новый репозиторий на github
->Выбрать "Repositories", затем нажать "New"*
-![git_new_repo](images/git_new_repo.png)
+    >Выбрать "Repositories", затем нажать "New"*
+    ![git_new_repo](images/git_new_repo.png)
 
->Ввести имя репозитория, далее нажать "Create repository"*
-![git_new_repo2](images/git_new_repo2.png)
+    >Ввести имя репозитория, далее нажать "Create repository"*
+    ![git_new_repo2](images/git_new_repo2.png)
 
-* добавить (подключить/указать) удаленный репозиторий
+    * добавить (подключить/указать) удаленный репозиторий
     >*git remote add origin ссылка на репозиторий*
 
-* указать основную ветку main
+    * указать основную ветку main
     >*git branch -M main*
 
-* отправить изменения в репозиторий
+    * отправить изменения в репозиторий
     >*git push -u origin main*
 
 **Отправить изменения из локального в удаленный репозиторий:**
@@ -124,6 +124,30 @@
 *При выкачивани происходит слияние (merge) и возможны конфликты.
 
 
-create conflict branch3
+**Как сделать pull request:**
 
-create conflict branch2
+Порядок действий:
+
+* создать Fork (ответвление) необходимого репозитория на github
+    >*Выбрать репозиторий, затем нажать "Fork"*
+![git_fork](images/git_fork.png)
+
+    >*Имя оставить тоже, далее нажать "Create fork"*
+![git_fork2](images/git_fork2.png)
+
+* Клонируем уже свою версию репозитория на локальный компьютер
+    >*git clone http адрес репозитоия*
+![git_clone](images/git_clone.png)
+
+
+* Создаем новую ветку и в НЕЕ вносим свои изменения
+    >*git checkout -b 'имя ветки'*
+
+* Фиксируем изменения (делаем коммиты)
+    >*git commit -am 'комментарий'*
+
+* Отправляем свою версию в свой GitHub
+    >*git push --set-upstream origin имя ветки*
+
+* На сайте GitHub нажимаем кнопку pull request
+![git_compare_and_pull_request](images/git_compare_and_pull_request.png)
